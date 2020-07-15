@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Listener for button New Project -->
+    <button class="btn btn-success" (click)="onNewProject()">New Project</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <!--Iterate all projects and display it -->
+    <app-project-item
+      *ngFor="let proEl of pro; let i = index"
+      [pro]="proEl"
+      [index]="i"></app-project-item>
+  </div>
+</div>
+
